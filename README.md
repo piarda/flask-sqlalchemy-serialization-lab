@@ -1,5 +1,26 @@
 # Lab: Flask-SQLAlchemy Serialization
 
+This project demonstrates how to set up a Flask application using SQLAlchemy for database management, with an emphasis on data serialization using Marshmallow. It includes models for 'Customer', 'Item', and 'Review', and showcases how to serialize these models while handling relationships between them.
+
+## Setup:
+1. Set up the database via:
+    flask db init
+    flask db migrate -m "initial migration"
+    flask db upgrade
+
+2. Seed the database via:
+    python seed.py
+
+3. Run the Flask application via:
+    flask run
+
+## Testing:
+To test the application, use the following command:
+    pytest
+
+
+----------------------------
+
 ## Scenario
 
 You are building a simplified e-commerce backend that manages customers, 
